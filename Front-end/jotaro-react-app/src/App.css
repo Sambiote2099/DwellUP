@@ -1,0 +1,90 @@
+.Main_page {
+  display: flex;
+  position: static;
+  height: 100vh;
+  overflow: auto;
+  flex-direction: column;
+  
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.button_frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.btn {
+  width: 100%;
+  padding: 9px;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 80px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Calibri', Courier, monospace;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 96%;
+  padding: 9px;
+  font-size: 22px;
+  margin-left: 2.2%;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Calibri', Courier, monospace;
+  font-style: italic;
+   }
+}
+
+.logo-img {
+  width: 700px;        /* desktop size */
+  padding-bottom: 20px;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 767px) {
+  .logo-img {
+    padding-top: 25px;
+    width: 100%;      /* smaller for mobile */
+    padding-bottom: 80px;
+  }
+}
+
+.Admin { background-color: green; }
+.User { background-color: orange; }
+.Agent { background-color: crimson; }
+
+.Admin:hover {
+  background-color: rgba(0, 128, 0, 0.75); 
+}
+.User:hover {
+  background-color: rgba(255, 165, 0, 0.75); 
+}
+.Agent:hover {
+  background-color: rgba(220, 20, 60, 0.75); 
+}

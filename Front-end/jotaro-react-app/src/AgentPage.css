@@ -1,0 +1,261 @@
+.agent-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .agent-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .login-box-agent {
+    background-color: #1e1e1e;
+    border: 3px solid crimson;
+    border-radius: 20px;
+    padding: 40px;
+    width: 666px;
+    height: auto;
+    box-shadow: 0 0 15px rgba(220, 20, 60, 0.5);
+    z-index: 1;
+  }
+  
+  @media (max-width: 767px) {
+  .login-box-agent {
+    width: 96%;
+    padding: 20px;
+    height: 97%;
+    padding-top: 10%;
+    
+  .agent-title {
+    font-size: 48px;
+    padding-bottom: 5%;
+    font-weight: bold;
+  }
+
+  .login-input-agent {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 7%;
+  }
+  .login-buttons-agent {
+    
+    padding-top: 12%;
+    gap:5%
+  }
+  .login-btn-agent {
+    width: 60%;
+  }
+  .back-btn-agent {
+    width: 40%;
+  }
+}
+}
+
+  .login-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between buttons */
+  margin-bottom: 20px;
+}
+
+  @media (max-width: 767px) {
+  .login-toggle-container {
+    flex-direction: column;
+    
+    gap: 10px; /* smaller gap */
+  }
+
+  .login-btn-agent {
+    width: 80%; /* make them wider for mobile */
+  }
+}
+
+  .agent-title {
+    color: crimson;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .login-input-agent {
+    width: 562px;
+    padding: 8px 15px;
+    border: 2px solid crimson;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .password-wrapper-agent {
+    position: relative;
+  }
+  
+  .password-icon-agent {
+    position: absolute;
+    margin-top: 8.2px;
+    margin-left: -30px;
+    font-size: 16px;
+    color: crimson;
+    cursor: pointer;
+  }
+  .password-icon-agent:hover {
+    color: #cc1a3d;
+  }
+  .password-icon-agent:active {
+    color: #cc1a3d;
+  }
+  
+  .login-buttons-agent {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+  }
+  
+  .back-btn-agent {
+    background-color: #e74c3c;
+    padding: 4px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-btn-agent:hover {
+    background-color: #c0392b;
+  }
+  
+  .login-btn-agent {
+    background-color: crimson;
+    padding: 6.5px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn-agent:hover {
+    background-color: #b01030;
+  }
+  
+  .terms-checkbox-agent {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .terms-checkbox-agent input[type='checkbox'] {
+    transform: scale(1.2);
+    accent-color: crimson;
+    cursor: pointer;
+  }
+  
+  .terms-link-agent {
+    text-decoration: underline;
+    color: #ff4c4c;
+    cursor: pointer;
+  }
+  .terms-link-agent:hover {
+    color: crimson;
+  }
+  
+  .terms-popup-agent {
+    position: fixed;
+    top: 18%;
+    width: 36%;
+    height: 62%;
+    background-color: #222;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    box-shadow: 0 0 20px crimson;
+    z-index: 1000;
+    padding: 20px;
+    color: white;
+  }
+
+  @media (max-width: 767px) {
+    .terms-popup-agent {
+      top: 8%;
+      width: 90%;
+      height: 82%;
+      overflow-y: auto;
+    }
+  }
+  .terms-content-agent h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .terms-content-agent pre {
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .close-terms-btn-agent {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .close-terms-btn-agent:hover {
+    background-color: #b01030;
+  }
+
+  .forgot-password-agent {
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  
+  .forgot-password-agent a {
+    color: crimson;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password-agent a:hover {
+    color: #ff4d6d;
+  }
+
+  .error-text-agent {
+    color: #ff6600;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
